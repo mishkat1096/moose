@@ -40,15 +40,15 @@ Detailed installation instruction can be found in https://mooseframework.inl.gov
   `git checkout PhaseField`
 
 ## Create Application:
-Application can be created with any name. For example, here Phase Field is used. The created folder and the executable both be of the same name (PhaseField)
+Application can be created with any name. For example, here Phase Field is used. The created folder and the executable both be of the same name (PhaseField):
 
   `cd ~/projects
    ./moose/scripts/stork.sh PhaseField`
 
 ## Enable modules:
-  - Modify the section of ~/projects/PhaseField/Makefile `ALL_MODULES` to `Yes`
+  - Modify the section of ~/projects/PhaseField/Makefile set `ALL_MODULES` to `Yes`
 
 ## Running input files:
-The inputfiles directory contains all the input files. There are sub-directories for different alloys. For example, to run an input file form Si-As alloy
+The inputfiles directory contains all the input files. There are sub-directories for different alloys. For example, to run an input file form Si-As alloy:
 
   `./PhaseField-opt -i ~/projects/moose/inputfiles/Si-AS/Si-As_nd_e30_v5_A.01.i`
